@@ -3,8 +3,7 @@ import { Box, Typography, TextField, Button, Paper } from "@mui/material";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL; // Access the environment variable
-
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL; // Access the base URL from .env
 function AdminPage() {
   let navigate = useNavigate()
     const [formAdmin,setFormAdmin] = useState({
